@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "CHEF",
+    "motivations": "I want to be a DRep because i see what's going on with the governance on Cardano right now and i believe that it's important for as many people as possible, to participate and have a voice. ",
+    "objectives": "I believe in Decentralization and in the power of community. I joined Cardano back in 2017, and up until now, i still believe in that vision that Charles had back then, to use our technology to make other people's lives better. \nMy goals as a Drep is to give voice to those who have the same beliefs, and ensure that this voice, is being heard!",
+    "paymentAddress": "addr1qyvhwx5yecq28tga8yhj25pm8ccm375l7mzsft2upd406hqgeqtu940733076lafemlm9ulm0l685zc03l6vscttfzesgxd5x4",
+    "qualifications": "Cardano member since September 2017.\nStake Pool Operator\nGreek Cardano Ambassador\nCo-Founder of zenGate Global - building  RWA solutions on Cardano",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Link of my Twitter",
+        "uri": "https://x.com/CardanoChefPool"
+      },
+      {
+        "@type": "Identity",
+        "label": "Link of my Twitter Profile",
+        "uri": "https://x.com/CardanoChefPool"
+      },
+      {
+        "@type": "Identity",
+        "label": "Link of my LinkedIn profile",
+        "uri": "www.linkedin.com/in/ theodore-morisis Vanity URL name"
+      }
+    ]
+  }
+}
